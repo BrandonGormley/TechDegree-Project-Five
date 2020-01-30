@@ -12,7 +12,14 @@
 /* Flex Items (Photos) */
 
 img {
-    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 8px;
+    transition: .5s;
+}
+
+img:hover {
+    transform: rotate(-5deg);
 }
 
 /* Search Bar */
@@ -20,7 +27,7 @@ img {
 .wrap {
     width: 100%;
     position: absolute;
-    top: 14%;
+    top: 10%;
     left: 37%;
   }
 
@@ -35,4 +42,10 @@ img {
     padding: 5px;
     height: 30px;
     border-radius: 5px;
+    transition: .5s;
+}
+
+.searchBar:hover,
+.searchBar:active {
+    transform: scale(1.1);
 }
