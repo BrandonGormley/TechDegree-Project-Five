@@ -2,10 +2,7 @@
 
 .container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     margin: 10% 20%;
 }
 
@@ -28,7 +25,7 @@ img:hover {
     width: 100%;
     position: absolute;
     top: 10%;
-    left: 37%;
+    left: 35%;
   }
 
 .search {
