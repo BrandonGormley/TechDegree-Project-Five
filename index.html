@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="js/rebox/jquery-rebox.css">
+    <link rel="stylesheet" href="js/hideSeek/styles.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Tech Degree Project Five</title>
 </head>
@@ -13,67 +15,94 @@
 
     <!-------------------------- Search Bar ------------------------------->
 
-    <div class="wrap">
-        <div class="search">
-            <input type="text" class="searchBar" placeholder="Search(16pt)">
-        </div>
+    <div class="search">
+        <input type="text" id="searchBar" class="searchBar" placeholder="Search (16pt)" data-list=".gallery">
     </div>
 
     <!------------------------ Photo Gallery ------------------------------>
 
-    <div class="container">
+    <div class="container gallery">
         <div class="photo-01">
-            <img src="photos/thumbnails/01.jpg" alt="">
+            <a href="photos/01.jpg"
+               data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields."><img
+                     src="photos/thumbnails/01.jpg" alt=""></a>
         </div>
 
         <div class="photo-02">
-            <img src="photos/thumbnails/02.jpg" alt="">
+            <a href="photos/02.jpg"
+               data-title="The lake was so calm today. We had a great view of the snow on the mountains from here."><img
+                     src="photos/thumbnails/02.jpg" alt=""></a>
         </div>
 
         <div class="photo-03">
-            <img src="photos/thumbnails/03.jpg" alt="">
+            <a href="photos/03.jpg"
+               data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below."><img
+                     src="photos/thumbnails/03.jpg" alt=""></a>
         </div>
 
         <div class="photo-04">
-            <img src="photos/thumbnails/04.jpg" alt="">
+            <a href="photos/04.jpg"
+               data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today."><img
+                     src="photos/thumbnails/04.jpg" alt=""></a>
         </div>
 
         <div class="photo-05">
-            <img src="photos/thumbnails/05.jpg" alt="">
+            <a href="photos/05.jpg"
+               data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."><img
+                     src="photos/thumbnails/05.jpg" alt=""></a>
         </div>
 
         <div class="photo-06">
-            <img src="photos/thumbnails/06.jpg" alt="">
+            <a href="photos/06.jpg"
+               data-title="Fall is coming, I love when the leaves on the trees start to change color."><img
+                     src="photos/thumbnails/06.jpg" alt=""></a>
         </div>
 
         <div class="photo-07">
-            <img src="photos/thumbnails/07.jpg" alt="">
+            <a href="photos/07.jpg" data-title="I drove past this plantation yesterday, everything is so green!"><img
+                     src="photos/thumbnails/07.jpg" alt=""></a>
         </div>
 
         <div class="photo-08">
-            <img src="photos/thumbnails/08.jpg" alt="">
+            <a href="photos/08.jpg" data-title="My summer vacation to the Oregon Coast. I love the sandy dunes!"><img
+                     src="photos/thumbnails/08.jpg" alt=""></a>
         </div>
 
         <div class="photo-09">
-            <img src="photos/thumbnails/09.jpg" alt="">
+            <a href="photos/09.jpg" data-title="We enjoyed a quiet stroll down this countryside lane."><img
+                     src="photos/thumbnails/09.jpg" alt=""></a>
         </div>
 
         <div class="photo-10">
-            <img src="photos/thumbnails/10.jpg" alt="">
+            <a href="photos/10.jpg" data-title="Sunset at the coast! The sky turned a lovely shade of orange."><img
+                     src="photos/thumbnails/10.jpg" alt=""></a>
         </div>
 
         <div class="photo-11">
-            <img src="photos/thumbnails/11.jpg" alt="">
+            <a href="photos/11.jpg"
+               data-title="I did a tour of a cave today and the view of the landscape below was breathtaking."><img
+                     src="photos/thumbnails/11.jpg" alt=""></a>
         </div>
 
         <div class="photo-12">
-            <img src="photos/thumbnails/12.jpg" alt="">
+            <a href="photos/12.jpg"
+               data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."><img
+                     src="photos/thumbnails/12.jpg" alt=""></a>
         </div>
 
     </div>
 
     <!--------------------- Js & jQuery  ----------------------->
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/rebox/jquery-rebox.js"></script>
+    <script src="js/hideSeek/jquery.hideseek.min.js"></script>
+
+    <script>
+        $('.gallery').rebox({ selector: 'a' });
+        $('#searchBar').hideseek();
+    </script>
 </body>
 
 </html>

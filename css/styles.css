@@ -3,46 +3,42 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    margin: 10% 20%;
+    margin: 10% 20% 0 20%;
+    justify-content: center;
 }
 
 /* Flex Items (Photos) */
 
 img {
     margin: 20px;
-    border-radius: 5px;
-    box-shadow: 2px 1px 8px;
+    border-radius: 8px;
+    box-shadow: 2px 1px 8px black;
     transition: .5s;
 }
 
 img:hover {
-    transform: rotate(-5deg);
+    /* transform: rotate(-5deg); */
 }
 
 /* Search Bar */
 
-.wrap {
-    width: 100%;
-    position: absolute;
-    top: 10%;
-    left: 35%;
-  }
-
 .search {
-    position: relative;
     display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 .searchBar {
-    width: 25%;
-    border: 1px solid rgb(189, 189, 189);
-    padding: 5px;
     height: 30px;
+    width: 25%;
+    border: 1px solid rgb(158, 158, 158); 
     border-radius: 5px;
-    transition: .5s;
+    padding: 4px 0 4px 10px;
+    font-size: 15px;
+    outline: none;
+    position: absolute;
+    top: 100px;
 }
 
-.searchBar:hover,
-.searchBar:active {
-    transform: scale(1.1);
-}
+/* Mediq Queries */
+
