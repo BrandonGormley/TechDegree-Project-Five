@@ -37,8 +37,14 @@ img:hover {
     font-size: 15px;
     outline: none;
     position: absolute;
-    top: 100px;
+    /* top: 100px; */
+    margin-top: 5%;
 }
 
-/* Mediq Queries */
+/* Media Queries */
 
+@media (max-width: 768px) {
+    .searchBar {
+        margin-top: 3%;
+    }
+}
